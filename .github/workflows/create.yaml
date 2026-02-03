@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest # Linux OS. We can have windows or MAC
     steps: # stages
       - name: Git Checkout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Setup Terraform
-      - uses: hashicorp/setup-terraform@v3
+        uses: hashicorp/setup-terraform@v3
 
       - name: run init
         run: terraform init
